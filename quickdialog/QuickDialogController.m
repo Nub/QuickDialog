@@ -246,6 +246,7 @@
 
 - (void)clearSearch {
     for (QSection* section in self.root.sections) {
+		section.hidden = NO;
        for (QElement* element in section.elements) {
            element.hidden = NO;
        }
